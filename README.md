@@ -21,7 +21,7 @@ Este é um projeto desenvolvido com o objetivo de praticar HTML e CSS, incluindo
 
 ## 🚀 Acesse o projeto
 
-Você pode ver o projeto publicado no GitHub Pages clicando [aqui](https://seu-usuario.github.io/nome-do-repositorio/). <!-- substitua com o link real -->
+Você pode ver o projeto publicado no GitHub Pages clicando [aqui](https://gabrielreis9153.github.io/accordion-faq/). <!-- substitua com o link real -->
 
 ## 📂 Como usar
 
