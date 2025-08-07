@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d3d3d3;
+}
+
+#container {
+    position: relative;
+  width: 675px;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+img {
+  transform: translate(50%);
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  z-index: 2;
+}
+
+#container-accordion {
+  position: relative;
+  display: flex;
+  gap: 8px;
+  width: 600px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  justify-content: flex-end;
+  z-index: 1;
+}
+
+.lista-accordions {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 0 16px 16px;
+  align-items: flex-end;
+}
+
+.faq {
+  text-align: left;
+  width: 100% ;
+  align-self: flex-start;
+  padding-left: 43px;
+}
+
+
+
+.accordion {
+  padding: 12px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  max-width: 90%;
+}
+
+.accordion-header {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.accordion-header span {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.accordion-body {
+  font-size: 14px;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s;
+}
+
+.accordion-body.active {
+  height: 100%;
+  opacity: 1;
+  padding: 5px 0px;
+}
+
+.arrow {
+  transition: transform 0.3s linear;
+}
+.accordion:has(.active) .arrow {
+  transform: rotate(180deg);
+  color: red;
+}
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/style/style.css" />
+    <title>Accordion</title>
+  </head>
+  <body>
+    <div id="container">
+      <img src="./src/public/imagem.png" alt="rapaz pulando" class="imagem" />
+      <div id="container-accordion">
+        <div class="lista-accordions">
+          <h1 class="faq">FAQ</h1>
+          <div class="accordion">
+            <button class="accordion-header">
+              <span> Qual o prazo de entrega para minha região? </span>
+              <i class="fa-solid fa-chevron-down arrow"></i>
+            </button>
+
+            <div class="accordion-body">
+              <p>
+                O prazo de entrega varia de acordo com a distância entre o local de origem e destino, podendo ser influenciado por fatores como logística e condições climáticas.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <button class="accordion-header">
+              <span> É possível solicitar entrega expressa? </span>
+              <i class="fa-solid fa-chevron-down arrow"></i>
+            </button>
+
+            <div class="accordion-body">
+              <p>
+                Algumas transportadoras oferecem serviços de entrega expressa com prazos mais curtos.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <button class="accordion-header">
+              <span> O que acontece se a encomenda não for entregue no prazo? </span>
+              <i class="fa-solid fa-chevron-down arrow"></i>
+            </button>
+
+            <div class="accordion-body">
+              <p>
+                Entre em contato com a transportadora para verificar o motivo do atraso e solicitar informações sobre a nova previsão de entrega.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./src/javascript/index.js"></script>
+  </body>
+</html>
